@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { ref } from "vue";
+
+const akshayVariable = ref("Akshay");
 </script>
 
 <template>
@@ -6,6 +9,9 @@
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
+    This is Akshay and Sunny's Project
+    <button @click="akshayVariable = 'Pragiti'">Click Me</button>
+    {{ akshayVariable }}
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
